@@ -1,17 +1,15 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
-
-void printname(int n,string a){
-
+void printname(int n){
     if(n==0)
     return;
     else 
-    cout << a << endl;
-    printname(n-1,a);
+    cout << "I Love Recursion" << endl;
+    printname(n-1);
 }
 
 int main() {
-    string name = "Sairaj";
-    int n = 5;
-    printname(n,name);
+    int N;
+    cin >> N;
+    printname(N);
 }
